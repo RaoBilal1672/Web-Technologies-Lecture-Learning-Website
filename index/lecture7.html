@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 7 - CSS Layout: Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>Lecture 07 Summary</p>
+    </header>
+
+    <main>
+        <div class="lecture-page">
+            <h1>Lecture 07: CSS Layout — Flexbox & Grid</h1>
+            
+            <h2>Flexbox</h2>
+            <p>Flexbox is a one-dimensional layout model for distributing space among items in a container.</p>
+            <ul>
+                <li><code>display: flex;</code> — Activates flexbox.</li>
+                <li><code>flex-direction:</code> row | column | row-reverse | column-reverse.</li>
+                <li><code>justify-content:</code> center | space-between | space-around | flex-start | flex-end.</li>
+                <li><code>align-items:</code> center | flex-start | flex-end | stretch.</li>
+                <li><code>gap:</code> Spacing between flex items.</li>
+            </ul>
+
+            <h2>CSS Grid</h2>
+            <p>Grid is a two-dimensional layout system for rows and columns simultaneously.</p>
+            <ul>
+                <li><code>display: grid;</code> — Activates grid.</li>
+                <li><code>grid-template-columns:</code> Defines column track sizes.</li>
+                <li><code>grid-template-rows:</code> Defines row track sizes.</li>
+                <li><code>gap:</code> Spacing between grid cells.</li>
+                <li><code>grid-column / grid-row:</code> Item placement.</li>
+            </ul>
+
+            <h2>When to Use Which?</h2>
+            <ul>
+                <li><strong>Flexbox:</strong> One-dimensional layouts (nav bars, card rows, centering).</li>
+                <li><strong>Grid:</strong> Two-dimensional layouts (page layouts, complex dashboards).</li>
+            </ul>
+
+            <h2>Consistent Spacing</h2>
+            <p>Use a spacing scale (e.g., 8px, 16px, 24px, 32px) for predictable layouts. Prefer <code>gap</code> in flex/grid layouts for consistent separation.</p>
+
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Technologies - CSC336 Assignment 1</p>
+    </footer>
+
+</body>
+</html>

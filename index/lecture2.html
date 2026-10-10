@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 2 - Tiered Web Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Technologies</h1>
+        <p>Lecture 02 Summary</p>
+    </header>
+
+    <main>
+        <div class="lecture-page">
+            <h1>Lecture 02: Tiered Web Architecture</h1>
+            
+            <h2>Separation of Concerns</h2>
+            <p>Tiered architecture separates presentation, application logic, and data into distinct layers, improving scalability and maintainability.</p>
+
+            <h2>One-Tier Architecture</h2>
+            <ul>
+                <li>Presentation, logic, and data are tightly coupled in one environment.</li>
+                <li>Examples: Desktop calculator, local inventory tool.</li>
+                <li><strong>Pros:</strong> Simple, low deployment complexity.</li>
+                <li><strong>Limitation:</strong> Poor fit for large multi-user web systems.</li>
+            </ul>
+
+            <h2>Two-Tier Architecture</h2>
+            <ul>
+                <li>Client communicates directly with a server/data service.</li>
+                <li><strong>Advantages:</strong> Simple mental model, easy for small systems, direct communication.</li>
+            </ul>
+
+            <h2>Three-Tier / N-Tier Architecture</h2>
+            <ul>
+                <li><strong>Presentation Tier:</strong> Browser / UI</li>
+                <li><strong>Application Tier:</strong> Business logic / API</li>
+                <li><strong>Data Tier:</strong> Database / persistence</li>
+            </ul>
+            <p>Each tier can evolve or scale with less impact on others.</p>
+
+            <h2>Tiers vs. Layers</h2>
+            <ul>
+                <li><strong>Tier:</strong> Physical/deployment separation (where components run).</li>
+                <li><strong>Layer:</strong> Logical responsibility (how software responsibilities are organized).</li>
+            </ul>
+
+            <h2>Choosing an Architecture</h2>
+            <p>Trade-offs include scalability, maintainability, and cost. Start simple when appropriate; separate concerns when complexity or scale justifies it.</p>
+
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Technologies - CSC336 Assignment 1</p>
+    </footer>
+
+</body>
+</html>

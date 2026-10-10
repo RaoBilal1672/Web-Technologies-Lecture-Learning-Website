@@ -1,0 +1,210 @@
+/* ===== Global Reset & Variables ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1f4e79;
+    --accent: #238c8b;
+    --light-bg: #f4f8fb;
+    --dark-text: #222;
+    --border: #d0dce8;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ===== Main Container ===== */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ===== Student Info Card ===== */
+.student-card {
+    background: #fff;
+    border-left: 6px solid var(--accent);
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.student-card h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.student-card p {
+    font-size: 1.05rem;
+    margin: 4px 0;
+}
+
+.student-card span {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* ===== Section Title ===== */
+.section-title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== Lecture Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+thead {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody tr:hover {
+    background-color: #eaf3fa;
+    transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fcff;
+}
+
+td a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+td a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* ===== Lecture Detail Pages ===== */
+.lecture-page {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.lecture-page h1 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.lecture-page h2 {
+    color: var(--accent);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 5px;
+}
+
+.lecture-page p, .lecture-page li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.lecture-page ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 22px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background: var(--accent);
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.7rem; }
+    th, td { padding: 10px; font-size: 0.9rem; }
+    .section-title { font-size: 1.4rem; }
+    .lecture-page { padding: 20px; }
+}
